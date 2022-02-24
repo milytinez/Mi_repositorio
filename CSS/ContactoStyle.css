@@ -1,0 +1,166 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Borde */
+
+.Borde {
+    
+     background-color: #6988AB;
+     height: 40px;
+     width: 1349px;
+}
+
+
+
+
+/* NAV */
+
+.Nav__Logo {
+    max-width: 208px;
+    max-height: 208px;
+}
+    
+
+.Nav__Menu {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 32px ;
+
+}
+
+ 
+ /* Color texto Menu */
+
+.Nav__Menu a  {	
+	color: #6988AB;
+	text-decoration: none; 
+}
+
+   .Nav__Menu a:hover  {
+	color: #15304e;
+    position: relative;
+}
+
+.Nav__Menu a::after {
+	color: #6988AB;
+}
+
+
+/* Rectangulo turnos */
+
+#Turnos {
+    background-color: #6988AB;
+    color: white;
+    font-weight: bold;
+    padding: 25px 65px;
+    
+}
+ 
+
+/* Posicion texto MENU */
+
+.Nav__Menu li {
+    display: inline;
+    padding: 60px;
+}
+
+
+/* Pestaña seleccionada */
+
+.Pestaña {
+    background-color: #6988AB;
+    height: 16px;
+    width: 200px;
+    position: absolute;
+    margin-left: 660px;
+    margin-top: 8px;
+}
+
+
+#LetraPestaña {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Body */
+
+
+.Contactos__fuentes {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #383838;
+}
+
+.Contactos__fuentes h5 {
+    color: #6988AB;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+.Contactos__card--right {
+    margin-left: 690px;
+    margin-top: -245px;
+    
+}
+
+.Contactos__card--left {
+    margin-left: 150px;
+    margin-top: 90px;
+    display: inline-block;
+}
+
+
+.Contactos__card--iconos {
+    height: 20px;
+    width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.Footer__iconos {
+    display: inline;
+    height: 48px;
+    width: 48px;
+    padding: 0px 25px;
+    margin: 20px;
+}

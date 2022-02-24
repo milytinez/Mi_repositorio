@@ -1,0 +1,220 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #383838;
+}
+
+/*Borde */
+
+.Borde {
+    
+     background-color: #6988AB;
+     height: 40px;
+     width: 1349px;
+     margin-top: 0px;
+}
+
+
+
+
+/* NAV */
+
+.Nav__Logo {
+    max-width: 208px;
+    max-height: 208px;
+}
+    
+
+.Nav__Menu {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 32px ;
+
+}
+
+ 
+ /* Color texto Menu */
+
+.Nav__Menu a  {	
+	color: #6988AB;
+	text-decoration: none; 
+}
+
+   .Nav__Menu a:hover  {
+	color: #15304e;
+    position: relative;
+}
+
+.Nav__Menu a::after {
+	color: #6988AB;
+}
+
+
+/* Rectangulo turnos */
+
+#Turnos {
+    background-color: #6988AB;
+    color: white;
+    font-weight: bold;
+    padding: 25px 65px;
+    
+}
+ 
+
+/* Posicion texto MENU */
+
+.Nav__Menu li {
+    display: inline;
+    padding: 60px;
+}
+
+
+
+
+/* BODY */
+
+/* Formulario */ 
+
+
+
+body div  {
+    margin-top: 62px;
+    align-content: center;
+}
+
+
+body div form label {
+    text-align: right;
+    margin-right: 24px;
+    margin-left: 290px;
+ }
+
+
+
+
+ #MarginFechaNacimiento {
+     margin-left: 198px;
+ }
+
+ #MarginTelefono {
+     margin-left: 285px;
+ }
+
+ #MarginElegirFecha {
+     margin-left: 259px;
+ }
+
+ #MarginElegirHorario {
+    margin-left: 248px;
+}
+
+#MarginMotivoConsulta {
+    margin-left: 220px;
+}
+
+
+.Radio__Coberturas {
+    display: inline;
+    margin-left: 376px;
+}
+
+.Radio__Coberturas input {
+    margin-right: 30px;
+}
+
+
+.Formulario__cajas { 
+    border-color: #6988AB;
+    border-style: solid;
+    border-radius: 5px;
+    height: 30px;
+    width: 350px;
+    padding-right: 5px;
+    padding-left: 7px;
+    outline-color: #15304e
+}
+
+.Formulario__cajas--coberturas {
+    border-color: #6988AB;
+    border-style: solid;
+    border-radius: 5px;
+    height: 30px;
+    width: 368px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-left: 373px;
+    outline-color: #15304e
+}
+
+
+.Formulario__cajas--tercio {
+    border-color: #6988AB;
+    border-style: solid;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    padding-right: 5px;
+    padding-left: 7px;
+    outline-color: #15304e
+}
+
+
+.Formulario__cajas--calendarios{
+    border-color: #6988AB;
+    border-style: solid;
+    border-radius: 5px;
+    height: 30px;
+    width: 201px;
+    padding-right: 5px;
+    padding-left: 7px;
+    outline-color: #15304e
+ }
+
+#FormularioCajasTextarea {
+    border-color: #6988AB;
+    border-style: bold;
+    border-radius: 5px;
+    height: 100px;
+    width: 350px;
+    padding-right: 5px;
+    padding-left: 7px;
+    margin-left: -10px;
+    resize: none;
+    outline-color: #15304e
+}
+
+
+/* Boton enviar */
+
+.Boton__SolicitarTurno {
+    background-color: #6988AB;
+    padding: 10px 60px;
+    font-weight: bold;
+    color: white;
+    font-size: medium;
+    border-radius: 5px;
+    border-color: #6988AB;
+    margin-left: 503px;
+    margin-top: 10px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.Footer__iconos {
+    display: inline;
+    height: 48px;
+    width: 48px;
+    padding: 0px 25px;
+    margin: 20px;
+}
