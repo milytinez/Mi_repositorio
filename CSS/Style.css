@@ -8,9 +8,10 @@
 
 /* GRID */ 
 
-/* GRID TAP  */
 
+    /* Grid tap  */
 
+/*
 .grid__nav--tap {
     display: grid;
     grid-template-rows: 40px;
@@ -22,7 +23,6 @@
     grid-template-columns: 1349px;
     grid-template-rows: 208px;
 }
-
 
 .grid__nav--nav {
     display: grid;
@@ -36,8 +36,14 @@
     justify-self: center;
     align-self: center;
 }
+*/
+
+    /*  Grid body  */
 
 
+    /* Index */
+
+/*    
 .grid__body--img {
     display: grid;
     grid-template-columns: 1264px;
@@ -50,8 +56,22 @@
     justify-self: center;
     align-self: center;
 }
+*/
 
+    /* Grid body coberturas  */
 
+/*    
+.grid__body--tabla {
+    display: grid;
+    grid-template-columns: 85,5%;
+    grid-template-rows: auto;
+    justify-content: center;
+    margin-top: 64px;
+} 
+*/
+
+    /*  Grid footer  */
+/*
 .grid__footer--iconos {
     display: grid;
     grid-template-columns: 132px 132px 132px 132px 132px 132px 132px 132px;
@@ -61,15 +81,17 @@
     margin-bottom: 16px;
 }
 
-
 .grid__footer--iconoshijo {
     justify-self: center;
     align-self: flex-end;
 }
+*/
 
 
 
-/*Borde */
+
+/* Borde  */
+
 
 .Borde {
     
@@ -88,6 +110,7 @@
 
 
 
+
 /* NAV */
 
 .Nav__Logo {
@@ -95,18 +118,16 @@
     max-height: 208px;
 }
     
-
 .Nav__Menu {
     list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: auto;
     text-align: center;
     /*margin-top: 32px ;*/
 
 }
 
- 
- /* Color texto Menu */
+    /* Color texto Menu */
 
 .Nav__Menu a  {	
 	color: #6988AB;
@@ -122,19 +143,17 @@
 	color: #6988AB;
 }
 
-
-/* Rectangulo turnos */
+    /* Rectangulo turnos */
 
 #Turnos {
     background-color: #6988AB;
     color: white;
     font-weight: bold;
-    padding: 25px 65px;
+    padding: auto ;
     
 }
- 
 
-/* Posicion texto MENU */
+    /* Posicion texto MENU */
 
 .Nav__Menu li {
     display: inline;
@@ -142,36 +161,98 @@
 }
 
 
+/* Pestaña seleccionada */
+
+.Pestaña__coberturas {
+    background-color: #6988AB;
+    height: 16px;
+    width: 288px;
+    position: absolute;
+    margin-left: -47px;
+    margin-top: 8px;
+}
+
+
+#LetraPestaña {
+    font-weight: bold;
+}
+
+
 
 
 /*BODY*/
 
-/* Tamaño imagen banner*/
+    /* Body Index*/
 
 .Body__Banner {
-    height: 350px;
-    width: 1264px;
+    margin-top: 5%;
     animation-name: Opacidad;
     animation-duration: 3s;
    }
+
+
+    /* Body Coberturas */
+
+
+.Tabla {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /*margin: 64px auto;*/
+    width: 1050px;
+}
+
+th {
+   /* background-image: linear-gradient( to bottom, #6988AB, grey ) ;*/
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    /*width: 800px;*/
+    height: 75px;
+    font-size: 20px;
+    padding: 32px auto;
+}
+
+td {
+    width: 1232px;
+    height: 40px;
+    color: #383838;
+}
+
+td a  {	
+	color: #383838;
+	text-decoration: none; 
+}
+
+td a:hover  {
+	color: #6988AB;
+    position: relative;
+}
+
+td a::after {
+	color: #383838;
+}
 
 
 
 
 /* FOOTER */
 
-/*footer {
-    margin-top: 50px;
+
+footer {
+    margin-top: 2%;
+    margin-bottom: 1%;
     text-align: center;
-}*/ 
+}
 
 #Footer__iconos {
     display: inline;
-    height: 48px;
-    width: 48px;
+    height: 45px;
+    width: 45px;
    /* padding: 0px 25px;
     margin: 20px;*/
 }
+
+
 
 
 /*ANIMACIONES*/
@@ -187,23 +268,6 @@
 
 }
 
-@keyframes BotonTurnos {
-
-    chico {
-        padding: 25px 65px;
-    }
-
-    grande {
-        padding: 30px 70px;
-    }
-
-}
-
-
-
-
-
-
 
 
 
@@ -211,7 +275,7 @@
 
 
 /*MEDIA QUERIE TABLET intervalo de  0px ---> 769px*/
-
+/*
 @media only screen and  (min-width:0px) and (max-width: 769px) { 
 	 
 
@@ -230,7 +294,6 @@
  
    }
 
-
    .grid__nav--nav {
     display: inline-grid;
     grid-template-columns:  20,5% 20,5% 20,5% 20,5%; 
@@ -246,7 +309,6 @@
     align-self: center;
    }
 
-
    .grid__body--img {
     display: inline-grid;
     grid-template-columns: 100%;
@@ -260,6 +322,14 @@
     align-self: center;
    }
 
+   .grid__body--tabla {
+    display: grid;
+    grid-template-columns: 85,5%;
+    grid-template-rows: auto;
+    justify-content: center;
+    margin-top: 64px;
+    margin-left: 570px;
+} 
 
    .grid__footer--iconos {
     display: grid;
@@ -269,13 +339,11 @@
     justify-content: center;
     margin-bottom: 16px;
     margin-left: 550px;
-
-   }
-
+}
 
    .grid__footer--iconoshijo {
     justify-self: center;
     align-self: flex-end;
    }
 
-}
+}*/
