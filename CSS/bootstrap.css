@@ -18,7 +18,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #007bff;
+  --primary: #6988AB;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -1965,7 +1965,7 @@ pre code {
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #6988AB;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -2018,7 +2018,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 select.form-control:focus::-ms-value {
-  color: #495057;
+  color: #6988AB;
   background-color: #fff;
 }
 
@@ -2505,8 +2505,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #6988AB;
+  border-color: #6988AB;
 }
 
 .btn-primary:hover {
@@ -3727,7 +3727,7 @@ tbody.collapse.show {
   height: calc(2.25rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   line-height: 1.5;
-  color: #495057;
+  color: #6988AB;
   vertical-align: middle;
   background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
   background-size: 8px 10px;
@@ -4429,18 +4429,36 @@ tbody.collapse.show {
 
 .card {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  display: flex;
+  display: flex;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
+  -ms-flex-direction: vertical;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
   background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-clip: border;
+  border: 0px rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card__doc2 {
+  position: relative;
+  display: flex;
+  display: flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: vertical;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #6988AB;
+  color: white;
+  background-clip: border;
+  border: 0px rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
 
@@ -4539,10 +4557,25 @@ tbody.collapse.show {
 }
 
 .card-img-top {
-  width: 100%;
+  display: block;
+  width: 10%;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
+
+.card-img-topdoc {
+  display: block;
+  width: 30%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.card-img-topmapa {
+  display: block;
+  width: 100%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}  
 
 .card-img-bottom {
   width: 100%;

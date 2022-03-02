@@ -6,8 +6,8 @@
 
 
 
-/* GRID */ 
 
+/* GRID */ 
 
     /* Grid tap  */
 
@@ -40,8 +40,7 @@
 
     /*  Grid body  */
 
-
-    /* Index */
+        /* Body Index */
 
 /*    
 .grid__body--img {
@@ -58,7 +57,7 @@
 }
 */
 
-    /* Grid body coberturas  */
+        /* Body coberturas  */
 
 /*    
 .grid__body--tabla {
@@ -70,7 +69,8 @@
 } 
 */
 
-    /*  Grid footer  */
+        /*  Grid footer  */
+
 /*
 .grid__footer--iconos {
     display: grid;
@@ -94,7 +94,7 @@
 
 
 .Borde {
-    
+      
      background-color: #6988AB;
      height: 40px;
      width: auto;
@@ -125,7 +125,6 @@
     font-size: auto;
     text-align: center;
     /*margin-top: 32px ;*/
-
 }
 
     /* Color texto Menu */
@@ -151,7 +150,6 @@
     color: white;
     font-weight: bold;
     padding: auto ;
-    
 }
 
     /* Posicion texto MENU */
@@ -161,8 +159,7 @@
     /*padding: 60px;*/
 }
 
-
-/* Pestaña seleccionada */
+    /* Pestaña seleccionada */
 
 .Pestaña__coberturas {
     background-color: #6988AB;
@@ -172,7 +169,6 @@
     margin-left: -47px;
     margin-top: 8px;
 }
-
 
 #LetraPestaña {
     font-weight: bold;
@@ -184,7 +180,7 @@
 /*BODY*/
 
     /* Body Index*/
-
+    
 .Body__Banner {
     margin-top: 5%;
     animation-name: Opacidad;
@@ -193,7 +189,6 @@
 
 
     /* Body Coberturas */
-
 
 .Tabla {
     text-align: center;
@@ -234,13 +229,216 @@ td a::after {
 }
 
 
+    /*Body Contacto*/
+
+.Contactos__fuentes {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #383838;
+}
+    
+.Contactos__fuentes h5 {
+     color: #6988AB;
+    font-weight: bold;
+    font-size: 17px;
+}
+    
+.Contactos__card--right {
+    margin-left: 690px;
+    margin-top: -245px;
+}
+    
+.Contactos__card--left {
+    display: inline-block;
+ }
+    
+.Contactos__card--iconos {
+    height: 20px;
+    width: 20px;
+}    
+
+.Contactos__margin {
+    margin-top: 5%;
+}
+
+
+    /* Body Profesionales */
+
+       /* Primer odontólogo */
+
+body div p b {
+    /*  margin-left: 563px;
+    margin-right: 145px;
+    margin-top: -550px;*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6988AB;
+    font-size: auto;
+}
+  
+.Odonto__uno img{
+    width: 50%;
+    height: 50%;
+    margin-top: 62px;
+}
+  
+        /* Segunda odontologa */
+
+.Odonto__dos {
+    background-color: #6988AB;
+    margin-top: 40px;
+    height: 480px;
+    width: auto;
+    display: inline-block;
+}
+  
+.Odonto__dos img {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    margin-left: 780px;
+    margin-top: 10px;
+}
+  
+.Odonto__dos p {
+    margin-right: 563px;
+    margin-left: 145px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: inline-block;
+    margin-top: -600px;
+    text-align: right;
+}
+
+
+    /* Body Turnos */ 
+
+       /*Formulario*/
+/*
+body div  {
+    margin-top: 62px;
+    align-content: center;
+}
+
+body div form label {
+    text-align: right;
+    margin-right: 24px;
+    margin-left: 290px;
+ }*/
+/*
+ #MarginFechaNacimiento {
+    margin-left: 198px;
+ }
+
+ #MarginTelefono {
+    margin-left: 285px;
+ }
+
+ #MarginElegirFecha {
+    margin-left: 259px;
+ }
+
+ #MarginElegirHorario {
+    margin-left: 248px;
+}
+
+#MarginMotivoConsulta {
+    margin-left: 220px;
+}
+
+.Radio__Coberturas {
+    display: inline;
+    margin-left: 376px;
+}
+
+.Radio__Coberturas input {
+    margin-right: 30px;
+}
+
+.Formulario__cajas { 
+    border-color: #6988AB;
+    border-style: solid;
+    border-radius: 5px;
+    height: 30px;
+    width: 350px;
+    padding-right: 5px;
+    padding-left: 7px;
+    outline-color: #15304e
+}
+
+.Formulario__cajas--coberturas {
+    border-color: #6988AB;
+    border-style: solid;
+    border-radius: 5px;
+    height: 30px;
+    width: 368px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-left: 373px;
+    outline-color: #15304e
+}
+
+.Formulario__cajas--tercio {
+    border-color: #6988AB;
+    border-style: solid;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    padding-right: 5px;
+    padding-left: 7px;
+    outline-color: #15304e
+}
+
+.Formulario__cajas--calendarios{
+    border-color: #6988AB;
+    border-style: solid;
+    border-radius: 5px;
+    height: 30px;
+    width: 201px;
+    padding-right: 5px;
+    padding-left: 7px;
+    outline-color: #15304e
+ }
+
+#FormularioCajasTextarea {
+    border-color: #6988AB;
+    border-style: bold;
+    border-radius: 5px;
+    height: 100px;
+    width: 350px;
+    padding-right: 5px;
+    padding-left: 7px;
+    margin-left: -10px;
+    resize: none;
+    outline-color: #15304e
+}
+*/
+
+.form__margin {
+    margin-top: 5%;
+}
+
+
+       /* Boton enviar */
+
+.Boton__SolicitarTurno {
+    background-color: #6988AB;
+    padding: 10px 60px;
+    font-weight: bold;
+    color: white;
+    font-size: medium;
+    border-radius: 5px;
+    border-color: #6988AB;
+    margin-left: 503px;
+    margin-top: 10px;
+}
+
+
 
 
 /* FOOTER */
 
 
 footer {
-    margin-top: 2%;
+    margin-top: 4%;
     margin-bottom: 1%;
     text-align: center;
 }
