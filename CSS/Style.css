@@ -1,548 +1,179 @@
-
+@charset "UTF-8";
 * {
-    margin: 0px;
-    padding: 0px;
-}
-
-
-
-
-/* GRID */ 
-
-    /* Grid tap  */
-
-/*
-.grid__nav--tap {
-    display: grid;
-    grid-template-rows: 40px;
-    grid-template-columns: 1349px;
-}
-
-.grid__nav--img {
-    display: grid;
-    grid-template-columns: 1349px;
-    grid-template-rows: 208px;
-}
-
-.grid__nav--nav {
-    display: grid;
-    grid-template-columns: 290px 290px 290px 290px;
-    grid-template-rows: 72px;
-    grid-column-gap: 24px;
-    justify-content: center;
-}
-
-.grid__nav--navhijo {
-    justify-self: center;
-    align-self: center;
-}
-*/
-
-    /*  Grid body  */
-
-        /* Body Index */
-
-/*    
-.grid__body--img {
-    display: grid;
-    grid-template-columns: 1264px;
-    grid-template-rows: 360px;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-.grid__body--imghijo {
-    justify-self: center;
-    align-self: center;
-}
-*/
-
-        /* Body coberturas  */
-
-/*    
-.grid__body--tabla {
-    display: grid;
-    grid-template-columns: 85,5%;
-    grid-template-rows: auto;
-    justify-content: center;
-    margin-top: 64px;
-} 
-*/
-
-        /*  Grid footer  */
-
-/*
-.grid__footer--iconos {
-    display: grid;
-    grid-template-columns: 132px 132px 132px 132px 132px 132px 132px 132px;
-    grid-template-rows: 136px;
-    grid-column-gap: 24px;
-    justify-content: center;
-    margin-bottom: 16px;
-}
-
-.grid__footer--iconoshijo {
-    justify-self: center;
-    align-self: flex-end;
-}
-*/
-
-
-
-
-/* Borde  */
-
-
-.Borde {
-      
-     background-color: #6988AB;
-     height: 40px;
-     width: auto;
-}
-
-.Borde__inf {
-    
-    background-color: #6988AB;
-    height: 40px;
-    width: auto;
-    
-}
-
-
-
-
-/* NAV */
-
+  margin: 0px;
+  padding: 0px; }
 
 .Nav__Logo {
-    max-width: 25%;
-    max-height: 25%;
-}
-    
+  max-width: 25%;
+  max-height: 25%; }
+
 .Nav__Menu {
-    list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: auto;
-    text-align: center;
-    /*margin-top: 32px ;*/
-}
-
-    /* Color texto Menu */
-
-.Nav__Menu a  {	
-	color: #6988AB;
-	text-decoration: none; 
-}
-
-.Nav__Menu a:hover  {
-	color: #15304e;
-    position: relative;
-}
-
-.Nav__Menu a::after {
-	color: #6988AB;
-}
-
-    /* Rectangulo turnos */
-
-#Turnos {
-    background-color: #6988AB;
-    color: white;
-    font-weight: bold;
-    padding: auto ;
-}
-
-    /* Posicion texto MENU */
-
-.Nav__Menu li {
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: auto;
+  text-align: center;
+  /*margin-top: 32px ;*/ }
+  .Nav__Menu a {
+    color: #6988AB;
+    text-decoration: none; }
+    .Nav__Menu a:hover {
+      color: #15304e;
+      position: relative; }
+    .Nav__Menu a::after {
+      color: #6988AB; }
+  .Nav__Menu li {
     display: inline;
-    /*padding: 60px;*/
-}
+    /*padding: 60px;*/ }
 
-    /* Pestaña seleccionada */
+/* Rectangulo turnos */
+#Turnos {
+  background-color: #6988AB;
+  color: white;
+  font-weight: bold;
+  padding: auto; }
 
+/* Pestaña seleccionada */
 .Pestaña__coberturas {
-    background-color: #6988AB;
-    height: 16px;
-    width: 288px;
-    position: absolute;
-    margin-left: -47px;
-    margin-top: 8px;
-}
+  background-color: #6988AB;
+  height: 16px;
+  width: 288px;
+  position: absolute;
+  margin-left: -47px;
+  margin-top: 8px; }
 
 #LetraPestaña {
-    font-weight: bold;
-}
+  font-weight: bold; }
 
+.Borde {
+  background-color: #6988AB;
+  height: 40px;
+  width: auto; }
 
+.Borde__inf {
+  background-color: #6988AB;
+  height: 40px;
+  width: auto; }
 
-
-/*BODY*/
-
-    /* Body Index*/
-    
 .Body__Banner {
-    margin-top: 5%;
-    animation-name: Opacidad;
-    animation-duration: 3s;
-   }
+  margin-top: 5%;
+  animation-name: Opacidad;
+  animation-duration: 3s; }
 
-
-    /* Body Coberturas */
-
+/* Body Coberturas */
 .Tabla {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    /*margin: 64px auto;*/
-    width: 1050px;
-}
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  /*margin: 64px auto;*/
+  width: 1050px; }
 
 th {
-   /* background-image: linear-gradient( to bottom, #6988AB, grey ) ;*/
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    /*width: 800px;*/
-    height: 75px;
-    font-size: 20px;
-    padding: 32px auto;
-}
+  /* background-image: linear-gradient( to bottom, #6988AB, grey ) ;*/
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  /*width: 800px;*/
+  height: 75px;
+  font-size: 20px;
+  padding: 32px auto; }
 
 td {
-    width: 1232px;
-    height: 40px;
+  width: 1232px;
+  height: 40px;
+  color: #383838; }
+  td a {
     color: #383838;
-}
+    text-decoration: none; }
+    td a:hover {
+      color: #6988AB;
+      position: relative; }
+    td a::after {
+      color: #383838; }
 
-td a  {	
-	color: #383838;
-	text-decoration: none; 
-}
-
-td a:hover  {
-	color: #6988AB;
-    position: relative;
-}
-
-td a::after {
-	color: #383838;
-}
-
-
-    /*Body Contacto*/
-
+/*Body Contacto*/
 .Contactos__fuentes {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #383838;
-}
-    
+  font-family: Arial, Helvetica, sans-serif;
+  color: #383838; }
+
 .Contactos__fuentes h5 {
-     color: #6988AB;
-    font-weight: bold;
-    font-size: 17px;
-}
-    
+  color: #6988AB;
+  font-weight: bold;
+  font-size: 17px; }
+
 .Contactos__card--right {
-    margin-left: 690px;
-    margin-top: -245px;
-}
-    
+  margin-left: 690px;
+  margin-top: -245px; }
+
 .Contactos__card--left {
-    display: inline-block;
- }
-    
+  display: inline-block; }
+
 .Contactos__card--iconos {
-    height: 20px;
-    width: 20px;
-}    
+  height: 20px;
+  width: 20px; }
 
 .Contactos__margin {
-    margin-top: 5%;
-}
+  margin-top: 5%; }
 
-
-    /* Body Profesionales */
-
-       /* Primer odontólogo */
-
+/* Body Profesionales */
+/* Primer odontólogo */
 body div p b {
-    /*  margin-left: 563px;
-    margin-right: 145px;
-    margin-top: -550px;*/
-    font-family: Arial, Helvetica, sans-serif;
-    color: #6988AB;
-    font-size: auto;
-}
-  
-.Odonto__uno img{
-    width: 50%;
-    height: 50%;
-    margin-top: 62px;
-}
-  
-        /* Segunda odontologa */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #6988AB;
+  font-size: auto; }
 
+.Odonto__uno img {
+  width: 50%;
+  height: 50%;
+  margin-top: 62px; }
+
+/* Segunda odontologa */
 .Odonto__dos {
-    background-color: #6988AB;
-    margin-top: 40px;
-    height: 480px;
-    width: auto;
-    display: inline-block;
-}
-  
-.Odonto__dos img {
+  background-color: #6988AB;
+  margin-top: 40px;
+  height: 480px;
+  width: auto;
+  display: inline-block; }
+  .Odonto__dos img {
     width: auto;
     height: auto;
     display: inline-block;
     margin-left: 780px;
-    margin-top: 10px;
-}
-  
-.Odonto__dos p {
+    margin-top: 10px; }
+  .Odonto__dos p {
     margin-right: 563px;
     margin-left: 145px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     display: inline-block;
     margin-top: -600px;
-    text-align: right;
-}
-
-
-    /* Body Turnos */ 
-
-       /*Formulario*/
-/*
-body div  {
-    margin-top: 62px;
-    align-content: center;
-}
-
-body div form label {
-    text-align: right;
-    margin-right: 24px;
-    margin-left: 290px;
- }*/
-/*
- #MarginFechaNacimiento {
-    margin-left: 198px;
- }
-
- #MarginTelefono {
-    margin-left: 285px;
- }
-
- #MarginElegirFecha {
-    margin-left: 259px;
- }
-
- #MarginElegirHorario {
-    margin-left: 248px;
-}
-
-#MarginMotivoConsulta {
-    margin-left: 220px;
-}
-
-.Radio__Coberturas {
-    display: inline;
-    margin-left: 376px;
-}
-
-.Radio__Coberturas input {
-    margin-right: 30px;
-}
-
-.Formulario__cajas { 
-    border-color: #6988AB;
-    border-style: solid;
-    border-radius: 5px;
-    height: 30px;
-    width: 350px;
-    padding-right: 5px;
-    padding-left: 7px;
-    outline-color: #15304e
-}
-
-.Formulario__cajas--coberturas {
-    border-color: #6988AB;
-    border-style: solid;
-    border-radius: 5px;
-    height: 30px;
-    width: 368px;
-    padding-right: 5px;
-    padding-left: 5px;
-    margin-left: 373px;
-    outline-color: #15304e
-}
-
-.Formulario__cajas--tercio {
-    border-color: #6988AB;
-    border-style: solid;
-    border-radius: 5px;
-    height: 30px;
-    width: 100px;
-    padding-right: 5px;
-    padding-left: 7px;
-    outline-color: #15304e
-}
-
-.Formulario__cajas--calendarios{
-    border-color: #6988AB;
-    border-style: solid;
-    border-radius: 5px;
-    height: 30px;
-    width: 201px;
-    padding-right: 5px;
-    padding-left: 7px;
-    outline-color: #15304e
- }
-
-#FormularioCajasTextarea {
-    border-color: #6988AB;
-    border-style: bold;
-    border-radius: 5px;
-    height: 100px;
-    width: 350px;
-    padding-right: 5px;
-    padding-left: 7px;
-    margin-left: -10px;
-    resize: none;
-    outline-color: #15304e
-}
-*/
+    text-align: right; }
 
 .form__margin {
-    margin-top: 5%;
-}
+  margin-top: 5%; }
 
-
-       /* Boton enviar */
-
+/* Boton enviar */
 .Boton__SolicitarTurno {
-    background-color: #6988AB;
-    padding: 10px 60px;
-    font-weight: bold;
-    color: white;
-    font-size: medium;
-    border-radius: 5px;
-    border-color: #6988AB;
-    margin-left: 503px;
-    margin-top: 10px;
-}
-
-
-
-
-/* FOOTER */
-
+  background-color: #6988AB;
+  padding: 10px 60px;
+  font-weight: bold;
+  color: white;
+  font-size: medium;
+  border-radius: 5px;
+  border-color: #6988AB;
+  margin-left: 503px;
+  margin-top: 10px; }
 
 footer {
-    margin-top: 4%;
-    margin-bottom: 1%;
-    text-align: center;
-}
+  margin-top: 4%;
+  margin-bottom: 1%;
+  text-align: center; }
 
 #Footer__iconos {
-    display: inline;
-    height: 100%;
-    width: 100%;
-   /* padding: 0px 25px;
-    margin: 20px;*/
-}
-
-
-
-
-/*ANIMACIONES*/
+  display: inline;
+  height: 100%;
+  width: 100%; }
 
 @keyframes Opacidad {
-
-    0%  {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-
-}
-
-
-
-
-
-
-
-/*MEDIA QUERIE TABLET intervalo de  0px ---> 769px*/
-/*
-@media only screen and  (min-width:0px) and (max-width: 769px) { 
-	 
-
-   .grid__nav--tap {
-    display: grid;
-    grid-template-rows: 40px;
-    grid-template-columns: 769px;
-   }
-
-   .grid__nav--img {
-    display: grid;
-    grid-template-columns: 100%px;
-    grid-template-rows: 200px;
-    justify-content: start;
-    margin-bottom: 24px;
- 
-   }
-
-   .grid__nav--nav {
-    display: inline-grid;
-    grid-template-columns:  20,5% 20,5% 20,5% 20,5%; 
-    grid-template-rows: 40px;
-    grid-column-gap: 37px;
-    justify-content: center;
-    margin-left: 32px;
-    font-size: 23px;
-}
-
-   .grid__nav--navhijo {
-    justify-self: center;
-    align-self: center;
-   }
-
-   .grid__body--img {
-    display: inline-grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 345px;
-    margin-left: 40px;
-    margin-top: 40px;
-}
-
-   .grid__body--imghijo {
-    justify-self: center;
-    align-self: center;
-   }
-
-   .grid__body--tabla {
-    display: grid;
-    grid-template-columns: 85,5%;
-    grid-template-rows: auto;
-    justify-content: center;
-    margin-top: 64px;
-    margin-left: 570px;
-} 
-
-   .grid__footer--iconos {
-    display: grid;
-    grid-template-columns: 132px 132px 132px 132px 132px 132px 132px 132px;
-    grid-template-rows: 136px;
-    grid-column-gap: 24px;
-    justify-content: center;
-    margin-bottom: 16px;
-    margin-left: 550px;
-}
-
-   .grid__footer--iconoshijo {
-    justify-self: center;
-    align-self: flex-end;
-   }
-
-}*/
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }

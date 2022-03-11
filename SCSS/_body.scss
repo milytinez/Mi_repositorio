@@ -1,0 +1,145 @@
+.Body__Banner {
+    margin-top: 5%;
+    animation-name: Opacidad;
+    animation-duration: 3s;
+   }
+
+
+    /* Body Coberturas */
+
+.Tabla {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /*margin: 64px auto;*/
+    width: 1050px;
+}
+
+th {
+   /* background-image: linear-gradient( to bottom, #6988AB, grey ) ;*/
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    /*width: 800px;*/
+    height: 75px;
+    font-size: 20px;
+    padding: 32px auto;
+}
+
+td {
+    width: 1232px;
+    height: 40px;
+    color: #383838;
+    a{	
+        color: #383838;
+        text-decoration: none;
+        &:hover  {
+            color: #6988AB;
+            position: relative;
+        }
+        &::after {
+            color: #383838;
+        }
+    }
+}
+
+    /*Body Contacto*/
+
+.Contactos__fuentes {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #383838;
+}
+    
+.Contactos__fuentes h5 {
+     color: #6988AB;
+    font-weight: bold;
+    font-size: 17px;
+}
+    
+.Contactos__card--right {
+    margin-left: 690px;
+    margin-top: -245px;
+}
+    
+.Contactos__card--left {
+    display: inline-block;
+ }
+    
+.Contactos__card--iconos {
+    height: 20px;
+    width: 20px;
+}    
+
+.Contactos__margin {
+    margin-top: 5%;
+}
+
+
+    /* Body Profesionales */
+
+       /* Primer odontólogo */
+
+body {
+    div{
+        p{
+            b{
+                font-family: Arial, Helvetica, sans-serif;
+                color: #6988AB;
+                font-size: auto;
+            }
+        }
+    }
+    
+}
+  
+.Odonto__uno img{
+    width: 50%;
+    height: 50%;
+    margin-top: 62px;
+}
+  
+        /* Segunda odontologa */
+
+.Odonto__dos {
+    background-color: #6988AB;
+    margin-top: 40px;
+    height: 480px;
+    width: auto;
+    display: inline-block;
+    img {
+        width: auto;
+        height: auto;
+        display: inline-block;
+        margin-left: 780px;
+        margin-top: 10px;
+    }
+
+    p {
+        margin-right: 563px;
+        margin-left: 145px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        display: inline-block;
+        margin-top: -600px;
+        text-align: right;
+    }
+}
+
+
+.form__margin {
+    margin-top: 5%;
+}
+
+
+       /* Boton enviar */
+
+.Boton__SolicitarTurno {
+    background-color: #6988AB;
+    padding: 10px 60px;
+    font-weight: bold;
+    color: white;
+    font-size: medium;
+    border-radius: 5px;
+    border-color: #6988AB;
+    margin-left: 503px;
+    margin-top: 10px;
+}

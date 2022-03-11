@@ -1,0 +1,52 @@
+
+.Nav__Logo {
+    max-width: 25%;
+    max-height: 25%;
+}
+    
+.Nav__Menu {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: auto;
+    text-align: center;
+    a  {	
+        color: #6988AB;
+        text-decoration: none;
+        &:hover  {
+            color: #15304e;
+            position: relative;
+        }
+        &::after {
+            color: #6988AB;
+        }
+    }
+    li {
+        display: inline;
+        /*padding: 60px;*/
+    }
+    /*margin-top: 32px ;*/
+}
+
+    /* Rectangulo turnos */
+
+#Turnos {
+    background-color: #6988AB;
+    color: white;
+    font-weight: bold;
+    padding: auto ;
+}
+
+    /* Pestaña seleccionada */
+
+.Pestaña__coberturas {
+    background-color: #6988AB;
+    height: 16px;
+    width: 288px;
+    position: absolute;
+    margin-left: -47px;
+    margin-top: 8px;
+}
+
+#LetraPestaña {
+    font-weight: bold;
+}
