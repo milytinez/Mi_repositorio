@@ -1,3 +1,9 @@
+$estiloFuente:(
+    colour: white,
+    negrita: bold,
+);
+
+
 .Body__Banner {
     margin-top: 5%;
     animation-name: Opacidad;
@@ -16,8 +22,8 @@
 
 th {
    /* background-image: linear-gradient( to bottom, #6988AB, grey ) ;*/
-    color: white;
-    font-weight: bold;
+    color: map-get($estiloFuente, colour);
+    font-weight: map-get($estiloFuente, negrita);
     text-align: center;
     /*width: 800px;*/
     height: 75px;
@@ -78,6 +84,7 @@ td {
 
        /* Primer odontólogo */
 
+
 body {
     div{
         p{
@@ -88,20 +95,41 @@ body {
             }
         }
     }
+
+    
     
 }
-  
+
+$Odontologxs:(
+    Amparo: map-get($estiloFuente, colour)
+    Ceci: #6988AB 
+);
+
+@each $od, $color in $Odontologxs {
+     .titulo--#{$od}{
+        color: $color;
+        font-weight: bold;
+     }    
+}
+
+@mixin margin($top,$left,$right,$bottom){
+    margin-top: $top;
+    margin-left: $left;
+    margin-right: $right;
+    margin-bottom: $bottom;
+}
+ 
 .Odonto__uno img{
     width: 50%;
     height: 50%;
-    margin-top: 62px;
+    @include margin(62px,null,null,null)
 }
   
         /* Segunda odontologa */
 
 .Odonto__dos {
     background-color: #6988AB;
-    margin-top: 40px;
+    @include margin(40px,null,null,null);
     height: 480px;
     width: auto;
     display: inline-block;
@@ -109,24 +137,22 @@ body {
         width: auto;
         height: auto;
         display: inline-block;
-        margin-left: 780px;
-        margin-top: 10px;
+        @include margin(10px,780px,null,null)
     }
 
     p {
-        margin-right: 563px;
-        margin-left: 145px;
+        @include margin(-600px,145px,563px,null);
         font-family: Arial, Helvetica, sans-serif;
-        color: white;
+        color: map-get($estiloFuente, colour);
         display: inline-block;
-        margin-top: -600px;
         text-align: right;
+        
     }
 }
 
 
 .form__margin {
-    margin-top: 5%;
+    @include margin(5%,null,null,null)
 }
 
 
@@ -135,11 +161,42 @@ body {
 .Boton__SolicitarTurno {
     background-color: #6988AB;
     padding: 10px 60px;
-    font-weight: bold;
-    color: white;
+    font-weight: map-get($estiloFuente, negrita);
+    color: map-get($estiloFuente, colour);
     font-size: medium;
     border-radius: 5px;
     border-color: #6988AB;
-    margin-left: 503px;
-    margin-top: 10px;
+    @include margin(10px,503px,null,null)
+}
+
+.botonForm{
+    display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.boton--enviar{
+    @extend .botonForm;
+    color: #fff;
+    background-color: #6988AB;
+    border-color: #6988AB;
+}
+
+.boton--borrar{
+    @extend .botonForm;
+    color: #6988AB;
+  background-color: #e6e6e6;
+  border-color: #6988AB;
 }

@@ -4482,10 +4482,13 @@ tbody.collapse.show {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 1.25rem;
+  color: #383838;
 }
 
 .card-title {
   margin-bottom: 0.75rem;
+  color: #6988AB;
+  font-size: auto;
 }
 
 .card-subtitle {
@@ -6523,15 +6526,16 @@ button.bg-dark:focus {
 
 .embed-responsive {
   position: relative;
-  display: block;
+   display: flex;
+  justify-content: center;
   width: 100%;
   padding: 0;
-  overflow: hidden;
 }
 
 .embed-responsive::before {
-  display: block;
+  display: flex;
   content: "";
+  justify-content: center;
 }
 
 .embed-responsive .embed-responsive-item,
@@ -6546,6 +6550,7 @@ button.bg-dark:focus {
   width: 100%;
   height: 100%;
   border: 0;
+  justify-content: center;
 }
 
 .embed-responsive-21by9::before {
@@ -6554,6 +6559,7 @@ button.bg-dark:focus {
 
 .embed-responsive-16by9::before {
   padding-top: 56.25%;
+  justify-content: center;
 }
 
 .embed-responsive-4by3::before {
