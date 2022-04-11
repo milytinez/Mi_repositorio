@@ -5,10 +5,31 @@ $estiloFuente:(
 
 
 .Body__Banner {
-    margin-top: 5%;
+    height: auto;
+    width: 100%;
     animation-name: Opacidad;
     animation-duration: 3s;
-   }
+}
+
+.Body__index--sobre {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-bottom: 4%;
+    h4 {
+       color: #6988AB;
+       
+    }
+    p {
+        color: #383838;
+    }
+}
+
+.body__index--video {
+   width: 80%;
+   height: auto;
+}
+   
 
 
     /* Body Coberturas */
@@ -16,16 +37,13 @@ $estiloFuente:(
 .Tabla {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    /*margin: 64px auto;*/
     width: 1050px;
 }
 
 th {
-   /* background-image: linear-gradient( to bottom, #6988AB, grey ) ;*/
     color: map-get($estiloFuente, colour);
     font-weight: map-get($estiloFuente, negrita);
     text-align: center;
-    /*width: 800px;*/
     height: 75px;
     font-size: 20px;
     padding: 32px auto;
@@ -100,9 +118,9 @@ body {
     
 }
 
-$Odontologxs:(
-    Amparo: map-get($estiloFuente, colour)
-    Ceci: #6988AB 
+$Odontologxs:(  
+    Amparo: map-get($estiloFuente, colour),
+    Ceci: #6988AB,
 );
 
 @each $od, $color in $Odontologxs {
@@ -122,8 +140,8 @@ $Odontologxs:(
 .Odonto__uno img{
     width: 50%;
     height: 50%;
-    @include margin(62px,null,null,null)
-}
+    @include margin(62px,null,null,null);
+ }
   
         /* Segunda odontologa */
 
@@ -139,11 +157,10 @@ $Odontologxs:(
         display: inline-block;
         @include margin(10px,780px,null,null)
     }
-
     p {
         @include margin(-600px,145px,563px,null);
         font-family: Arial, Helvetica, sans-serif;
-        color: map-get($estiloFuente, colour);
+        color: white;
         display: inline-block;
         text-align: right;
         
